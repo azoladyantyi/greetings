@@ -1,0 +1,21 @@
+h1{
+  text-align: center;
+  color: red;
+  font-size: 90px;
+}
+
+body{
+  text-align: center;
+  background-color: inherit;
+  display: border;
+}
+
+div {
+    border: 2px solid;
+    padding: autor;
+    background: light blue;
+    border-width:thick;
+    border-top: 100%;
+    border-radius: 25px;
+    align-items: center;
+}
