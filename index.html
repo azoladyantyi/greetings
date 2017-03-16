@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <body style="background-color:powderblue";>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>Greeting</title>
     <link rel="stylesheet" href="greet.css">
-  </head>
-  <body>
+
+    <body style="background-color:powderblue;">
+
+</head>
+
+<body>
     <div class="GREETING">
 
-    <h1 style="background-image:hands.jpg">Greeting</h1>
-    <form class="greetin" action="index.html" method="post">
+        <h1 style="background-image:hands.jpg">Greeting</h1>
+        <img src="480613419.jpg" alt="Smiley face" height="150" width="150">
+        <form id="myForm">
 
-     <label for="name">Name</label>
-      <input type="text" class="user" name="name" value=""/><br><br>
+            <label for="name">Name</label>
+            <input type="text" class="user" name="name" value="" /><br><br>
 
+            <fieldset>
+                <legend>choose language</legend>
+                <input type="radio" name="language" value="isiXhosa" class="xhosa">isiXhosa <br>
+                <input type="radio" name="language" value="English" class="engl">English <br>
+                <input type="radio" name="language" value="Sotho" class="sesotho">Sesotho <br>
 
-    <input type="radio" name="language"  value="isiXhosa" class="xhosa">isiXhosa &nbsp &nbsp
-    <input type="radio" name="language" value="English" class="engl">English &nbsp&nbsp
-    <input type="radio" name="language" value="Sotho" class="sesotho">Sesotho <br><br>
+            </fieldset> <br>
 
-      <input type="button" name="Greet me" value="Greet me" class="submit"/> <br><br>
-      <p class="msg"></p>
-    </form>
+            <input type="button" name="Greet me" value="Greet me" class="submit" /> <br><br>
+            <p class="msg"></p>
+            <p id="count"></p>
+            <input type="button" onclick="resetclear()" value="Reset" class="reset"><br><br>
+
     </div>
+    </form>
 
-  </body>
-  <script src="greet.js" charset="utf-8"></script>
+</body>
+<script src="greet.js" charset="utf-8"></script>
+
 </html>
