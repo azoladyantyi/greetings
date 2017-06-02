@@ -4,33 +4,20 @@ var msg = document.querySelector(".msg");
 var language = document.getElementsByName("language");
 var countClicks = document.getElementById("count");
 var myForm = document.getElementById("myForm");
+var reset = document.querySelector('#reset');
 
-var counter = 0;
+var counter = 0 ;
 
-// //create a variable for array
- var names = [];
-
-//create the function
+var names = [];
 sub.addEventListener("click", function() {
     var lang = "";
+    languages();
+    greetMassage();
     counts();
+countClicks.innerHTML = counter;
+});
 
-        if (language[0].checked) {
-            msg.innerHTML = "Molo " + input.value + "!";
+reset.addEventListener('click', function() {
 
-
-        } else if (language[1].checked) {
-
-            msg.innerHTML = "Hello " + input.value + "!";
-
-        } else if (language[2].checked) {
-
-            msg.innerHTML = "Dumela " + input.value + "!";
-        }
-
-        document.getElementById("count").innerHTML = counter;
-
-
-  });
-
-resetclear()
+  resetClear();
+});

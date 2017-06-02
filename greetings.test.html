@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title></title>
 
@@ -10,28 +11,35 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.min.js"></script>
 
+</head>
 
-  </head>
-  <body>
+<body>
     <!-- -->
-<div id="mocha"></div>
-<script>
-    // the mocha test style to use - we use BDD - Behviour Driven Development
-    mocha.setup('bdd');
-    //ensure the assert function is available
-    var assert = chai.assert;
-</script>
+    <div id="mocha"></div>
+    <script>
+        // the mocha test style to use - we use BDD - Behviour Driven Development
+        mocha.setup('bdd');
+        //ensure the assert function is available
+        var assert = chai.assert;
+    </script>
 
-<!-- the function to be tested -->
-<script src="greet.js" charset="utf-8"></script>
-<!-- followed by the tests -->
-<script src="greetings_test/greetings_test1.js" charset="utf-8"></script>
+    <!-- the function to be tested -->
+    <script src="greet.massage.js" charset="utf-8"></script>
+    <script scr="reset.js" charset="utf-8"></script>
+    <script scr="count.js" charset="utf-8"></script>
 
-<script>
-    <!-- configure and run mocha -->
-    mocha.checkLeaks();
-    mocha.run();
-</script>
+    <!-- followed by the tests -->
+    <script src="greetings_test/greetMassage.test.js" charset="utf-8"></script>
+    <script src="greetings_test/resetTest.js" charset="utf-8"></script>
+    <script scr="greetings_test/countsTest.js" charset="utf-8"></script>
+
+
+    <script>
+        <!-- configure and run mocha -->
+        mocha.checkLeaks();
+        mocha.run();
+    </script>
 </body>
-  </body>
+</body>
+
 </html>

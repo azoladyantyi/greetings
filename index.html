@@ -5,10 +5,13 @@
     <meta charset="utf-8">
     <title>Greeting</title>
     <link rel="stylesheet" href="greet.css">
-    <body style="background-color:powderblue;">
-      <script type="text/javascript" src="reset.js" > </script>
-      <script type="text/javascript" src="count.js" > </script>
 
+    <body style="background-color:powderblue;">
+        <script type="text/javascript" src="language.js"></script>
+        <script type="text/javascript" src="greet.massage.js"></script>
+        <script type="text/javascript" src="reset.js">
+        </script>
+        <script type="text/javascript" src="counts.js"></script>
 </head>
 
 <body>
@@ -24,15 +27,15 @@
             <fieldset>
                 <legend>choose language</legend>
                 <input type="radio" name="language" value="isiXhosa" class="xhosa">isiXhosa <br>
-                <input type="radio" name="language" value="English" class="engl">English <br>
+                <input type="radio" name="language" value="English" class="englz">English <br>
                 <input type="radio" name="language" value="Sotho" class="sesotho">Sesotho <br>
 
             </fieldset> <br>
 
             <input type="button" name="Greet me" value="Greet me" class="submit" /> <br><br>
             <p class="msg"></p>
-            <p id="count"></p>
-            <input type="button" onclick="resetclear()" value="Reset" class="reset"><br><br>
+            <p id="count">0</p>
+            <input type="button" value="Reset" id="reset"><br><br>
 
     </div>
     </form>

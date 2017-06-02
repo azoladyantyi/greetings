@@ -1,6 +1,5 @@
-function resetclear() {
-    msg.innerHTML = "";
-    input.value = "";
-    // document.getElementById("count").innerHTML = 0;
-    document.getElementById("count").innerHTML = "";
-}
+function resetClear() {
+  msg.innerHTML = "";
+  countClicks.innerHTML = 0;
+return 0;
+};
